@@ -308,6 +308,10 @@ body {
   justify-content: space-between;
   gap: 4px;
 }
+footer{
+  font-family: 'openl';
+  font-size: 0.6rem;
+}
 
 @media (max-width: 600px){
   .content-1-1{
