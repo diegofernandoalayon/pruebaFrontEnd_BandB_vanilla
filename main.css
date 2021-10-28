@@ -6,7 +6,7 @@
 }
 @font-face{
   font-family: 'openB';
-  src: url('./fonts/st') format('truetype');
+  src: url('./fonts/static/OpenSans/OpenSans-ExtraBold.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
@@ -120,6 +120,67 @@ body {
   display:none;
 }
 
+/*copy*/
+.copy{
+  background-color:white;
+  display: flex;
+  padding: 30px;
+  margin-bottom: 1.3rem;
+  border-radius: 8px;
+  gap: 1rem;
+}
+.copy h2{
+  font-family: 'openB';
+  font-weight: bold;
+  font-size: 2rem;
+}
+.copy-text{
+  text-align: left;
+  flex-grow: 2;
+  flex-basis: 50%;
+}
+.copy-text p{
+  font-family: 'openL';
+}
+.copy-btn{
+  text-align: left;
+  flex-grow: 1
+}
+.btn{
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: 'openB';
+  font-size: 1.3rem;
+  display: flex;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-primario{
+  width: 100%;
+  background-color: var(--colorBtnPrimary);
+  margin-bottom: 10px;
+  color: var(--colorTextBtnPrimary);
+  
+  
+}
+.btn img{
+  /* margin: auto; */
+  margin-left: 1.3rem;
+}
+.btn-primario:hover{
+  background-color: var(--colorBtnPrimaryHover);
+  
+}
+.btn-secundario{
+  width: 100%;
+  background-color: var(--colorBtnSecondary);
+  color: var(--colorText);
+}
+.btn-secundario:hover{
+  background-color: var(--colorBtnSecondaryHover);
+}
 
 @media (max-width: 600px){
   .content-1-1{
