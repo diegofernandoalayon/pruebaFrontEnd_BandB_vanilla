@@ -181,6 +181,44 @@ body {
 .btn-secundario:hover{
   background-color: var(--colorBtnSecondaryHover);
 }
+/*tarjetas*/
+.tarjeta{
+  /* margin: 0 16px 0 16px; */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 2px gray;
+  max-width: 30%;
+  justify-content: space-between;
+}
+.tarjeta img{
+  width: 100%;
+  object-fit: fill;
+  border-radius: 8px 8px 0 0;
+
+}
+.tarjeta figure{
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+.tarjeta h3{
+  padding: 0 0 3% 3%;
+  margin: 0;
+  font-family: 'openB';
+  color:white;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+.tarjeta h3:hover{
+  transform: scale(1.02,1.02);
+}
+.tarjeta h4{
+  font-family: 'openB';
+}
+.text{
+  padding: 0 20px 20px 20px ;
+}
 
 @media (max-width: 600px){
   .content-1-1{
@@ -230,5 +268,9 @@ body {
   }
   #check:checked ~ .list-menu{
     left: 0;
+  }
+  .tarjeta{
+    margin-bottom: 40px;
+    max-width: 100%;
   }
 }
