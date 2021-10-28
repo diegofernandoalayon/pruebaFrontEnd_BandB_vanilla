@@ -243,7 +243,7 @@ body {
 }
 .btn-paleta{
   margin-top: 20px;
-  width: 30%;
+  width: 6rem;
   border: none;
   font-family: 'openB';
   display: flex;
@@ -257,6 +257,56 @@ body {
 }
 .btn-paleta:hover{
   background-color: var(--colorBtnPrimaryHover);
+}
+
+/* texto*/
+.texto{
+  text-align: left;
+  font-family: 'openL';
+}
+.texto h2{
+  font-family: 'openB';
+}
+.btn-texto{
+  margin-top: 20px;
+  width: 13rem;
+  border: none;
+  font-family: 'openB';
+  display: flex;
+  padding: 6px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 8px;
+  color: var(--colorTextBtnPrimary);
+  background-color: var(--colorBtnPrimary);
+  cursor: pointer;
+}
+.btn-texto:hover{
+  background-color: var(--colorBtnPrimaryHover);
+}
+
+/*links*/
+.links{
+  text-align: left;
+}
+.link-list{
+  list-style: none;
+  /* text-align: left; */
+  padding: 0;
+  font-family: 'openL';
+}
+.link-item a{
+  color:var(--colorText)
+}
+/*contact*/
+
+.contact{
+  text-align: left;
+}
+.social{
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
 }
 
 @media (max-width: 600px){
@@ -308,8 +358,14 @@ body {
   #check:checked ~ .list-menu{
     left: 0;
   }
+  .copy {
+    flex-direction: column;
+}
   .tarjeta{
     margin-bottom: 40px;
     max-width: 100%;
+  }
+  .paleta{
+    width: 100%;
   }
 }
